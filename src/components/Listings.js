@@ -1,40 +1,50 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Filters from './Filters.js';
-import jsonData from '../assets/data/south40freshman.json';
-import Listing from './SingleListing.js'
 
-//import './Listings.css'
-const locationOptions = ['All', 'South 40', 'Village & Off Campus'];
-const styleOptions = ['All','Modern', 'Traditional'];
+import jsonData from '../assets/data/south40freshman.json';
+
+import './Listings.css'
+
+const dormData = Object.values(jsonData);
 
 class Listings extends React.Component{
   constructor(props){
     super(props);
-    this.onLocationSelection = this.onLocationSelection.bind(this);
-    this.onStyleSelection = this.onStyleSelection.bind(this);
     this.state = {
-      selectedLocation: 'All',
-      selectedStyle: 'All'
+      currentStyle: this.props.selectedStyle
     };
+    this.getData = this.getData.bind(this);
   }
   
-  onLocationSelection(location) {
-    this.setState({selectedLocation: location});
-  }
-  onStyleSelection(style){
-    this.setState({selectedStyle: style});
+  getData(){
+    let data;
+    console.log(this.props.selectedStyle);
+    if(this.props.selectedStyle !== 'All'){
+      data = dormData.filter((dorm) => {
+        return dorm.style == this.props.selectedStyle;
+      });
+    }else{
+      console.log('here');
+      data = dormData;
+    }
+    
+    return data;
   }
   
-  render() {
-    return (
-      <div>
-        <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection}/>
-        <Filters selected={this.state.selectedStyle} options={styleOptions} onChange={this.onStyleSelection}/>
-        <Listing />
+  render(){
+    const currentData = this.getData();
+    const list = currentData.map(dorm =>
+      <div className='single-listing' key={dorm.name}>
+        <h2>{dorm.name}</h2>
+        <ul>
+          <li>Style: {dorm.style}</li>
+          <li>{dorm.roomType}</li>
+        </ul>
       </div>
-    )
-  };
+    );
+    return <div className='listing-container'>{list}</div>
+  }
 }
 
 export default Listings;
