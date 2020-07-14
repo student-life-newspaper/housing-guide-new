@@ -1,6 +1,7 @@
 {
     "Beaumont": {
         "name": "Beaumont",
+        "codeName": "beaumont",
         "style": "Traditional",
         "roomType": "Suite with Singles, Doubles, and Triples",
         "studyRoom": "Yes",
@@ -23,6 +24,7 @@
     },
     "Danforth": {
         "name": "Danforth",
+        "codeName": "danforth",
         "style": "Modern",
         "roomType": "Suite with Doubles",
         "studyRoom": "Yes",
@@ -45,6 +47,7 @@
     },
     "Dardick": {
         "name": "Dardick",
+        "codeName": "dardick",
         "style": "Modern",
         "roomType": "Suite with Doubles",
         "studyRoom": "Yes",
@@ -67,6 +70,7 @@
     },
     "Dauten": {
         "name": "Dauten",
+        "codeName": "dauten",
         "style": "Traditional",
         "roomType": "Suite with Singles and Doubles (6 people)",
         "studyRoom": "Yes",
@@ -89,6 +93,7 @@
     },
     "Eliot A": {
         "name": "Eliot A",
+        "codeName": "eliota",
         "style": "Modern",
         "roomType": "Suite with Singles and Doubles",
         "studyRoom": "Yes",
@@ -111,6 +116,7 @@
     },
     "Hurd": {
         "name": "Hurd",
+        "codeName": "hurd",
         "style": "Traditional",
         "roomType": "Suite with Singles and Doubles (6 people)",
         "studyRoom": "Yes",
@@ -133,6 +139,7 @@
     },
     "Koenig": {
         "name": "Koenig",
+        "codeName": "koenig",
         "style": "Modern",
         "roomType": "Suite with Doubles and Triples",
         "studyRoom": "Yes",
@@ -155,6 +162,7 @@
     },
     "Lee": {
         "name": "Lee",
+        "codeName": "lee",
         "style": "Traditional",
         "roomType": "Suite with Doubles and Triples",
         "studyRoom": "Yes",
@@ -177,6 +185,7 @@
     },
     "Lien": {
         "name": "Lien",
+        "codeName": "lien",
         "style": "Modern",
         "roomType": "Suite with Doubles",
         "studyRoom": "Yes",
@@ -199,6 +208,7 @@
     },
     "Park": {
         "name": "Park",
+        "codeName": "park",
         "style": "Modern",
         "roomType": "Suite with Doubles (6 people)",
         "studyRoom": "Yes",
@@ -221,6 +231,7 @@
     },
     "Umrath": {
         "name": "Umrath",
+        "codeName": "umrath",
         "style": "Modern",
         "roomType": "Suite with Doubles and Triples",
         "studyRoom": "Yes",

@@ -1,12 +1,12 @@
-﻿name,style,roomType,studyRoom,commonRoom,computerLab,elevator,kitchen,seminarRoom,musicPractice,laundryRoom,closeDining,closeParking,closeMail,closeMetro,closeClocktower,closeCirculator,timeToDUC,timeToBrookings,timeToLoop
-Beaumont,Traditional,"Suite with Singles, Doubles, and Triples",Yes,Yes,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,10,20,25
-Danforth,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,10,15,30
-Dardick,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,10,15,25
-Dauten,Traditional,Suite with Singles and Doubles (6 people),Yes,Yes,Yes,No,Yes,No,No,Yes,No,Yes,No,No,No,No,10,20,26
-Eliot A,Modern,Suite with Singles and Doubles,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,7,20,25
-Hurd,Traditional,Suite with Singles and Doubles (6 people),Yes,Yes,Yes,No,Yes,No,No,Yes,No,Yes,Yes,No,No,No,7,15,25
-Koenig,Modern,Suite with Doubles and Triples,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,5,15,25
-Lee,Traditional,Suite with Doubles and Triples,Yes,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,7,15,25
-Lien,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,5,15,25
-Park,Modern,Suite with Doubles (6 people),Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,10,19,24
-Umrath,Modern,Suite with Doubles and Triples,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,5,20,25
+﻿name,codeName,style,roomType,studyRoom,commonRoom,computerLab,elevator,kitchen,seminarRoom,musicPractice,laundryRoom,closeDining,closeParking,closeMail,closeMetro,closeClocktower,closeCirculator,timeToDUC,timeToBrookings,timeToLoop
+Beaumont,beaumont,Traditional,"Suite with Singles, Doubles, and Triples",Yes,Yes,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,10,20,25
+Danforth,danforth,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,10,15,30
+Dardick,dardick,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,10,15,25
+Dauten,dauten,Traditional,Suite with Singles and Doubles (6 people),Yes,Yes,Yes,No,Yes,No,No,Yes,No,Yes,No,No,No,No,10,20,26
+Eliot A,eliota,Modern,Suite with Singles and Doubles,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,7,20,25
+Hurd,hurd,Traditional,Suite with Singles and Doubles (6 people),Yes,Yes,Yes,No,Yes,No,No,Yes,No,Yes,Yes,No,No,No,7,15,25
+Koenig,koenig,Modern,Suite with Doubles and Triples,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,5,15,25
+Lee,lee,Traditional,Suite with Doubles and Triples,Yes,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,7,15,25
+Lien,lien,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,5,15,25
+Park,park,Modern,Suite with Doubles (6 people),Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,10,19,24
+Umrath,umrath,Modern,Suite with Doubles and Triples,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,5,20,25

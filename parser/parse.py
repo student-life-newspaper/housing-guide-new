@@ -29,7 +29,7 @@ def make_json(csvFilePath, jsonFilePath):
 # Decide the two file paths according to your  
 # computer system 
 csvFilePath = r'south40freshman.csv'
-jsonFilePath = r'../src/assets/data/south40freshman.json'
+jsonFilePath = r'../src/data/south40freshman.json'
 
 # Call the make_json function 
 make_json(csvFilePath, jsonFilePath)

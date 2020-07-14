@@ -2,11 +2,15 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Filters from './Filters.js';
 
-import jsonData from '../assets/data/south40freshman.json';
+import jsonData from '../data/south40freshman.json';
+
+//import beaumontImg from '../assets/img/thumbs/beaumont.png';
 
 import './Listings.css'
 
 const dormData = Object.values(jsonData);
+const dormNames = Object.keys(jsonData);
+
 
 class Listings extends React.Component{
   constructor(props){
@@ -34,14 +38,18 @@ class Listings extends React.Component{
   
   render(){
     const currentData = this.getData();
+    const thumbnailUrl = '../img/thumbs/'
     const list = currentData.map(dorm =>
-      <div className='single-listing' key={dorm.name}>
-        <h2>{dorm.name}</h2>
-        <ul>
-          <li>Style: {dorm.style}</li>
-          <li>{dorm.roomType}</li>
-        </ul>
-      </div>
+      <Row className='single-listing' key={dorm.name}>
+        <Col xs='3'><img className='dorm-thumbnail' src={'/img/thumbs/' + dorm.codeName + '.png'}/></Col>
+        <Col xs='9'>
+          <h2>{dorm.name}</h2>
+          <ul>
+            <li>Style: {dorm.style}</li>
+            <li>{dorm.roomType}</li>
+          </ul>
+        </Col>
+      </Row>
     );
     return <div className='listing-container'>{list}</div>
   }
