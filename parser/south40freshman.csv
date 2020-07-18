@@ -1,4 +1,4 @@
-﻿name,codeName,style,roomType,studyRoom,commonRoom,computerLab,elevator,kitchen,seminarRoom,musicPractice,laundryRoom,closeDining,closeParking,closeMail,closeMetro,closeClocktower,closeCirculator,timeToDUC,timeToBrookings,timeToLoop
+﻿name,shortName,style,roomType,studyRoom,commonRoom,computerLab,elevator,kitchen,seminarRoom,musicPractice,laundryRoom,closeDining,closeParking,closeMail,closeMetro,closeClocktower,closeCirculator,timeToDUC,timeToBrookings,timeToLoop
 Beaumont,beaumont,Traditional,"Suite with Singles, Doubles, and Triples",Yes,Yes,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,10,20,25
 Danforth,danforth,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,10,15,30
 Dardick,dardick,Modern,Suite with Doubles,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No,No,10,15,25

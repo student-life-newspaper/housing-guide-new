@@ -4,6 +4,8 @@ import Header from './Header.js';
 import Filters from './Filters.js';
 import Listings from './Listings.js';
 
+import './Main.css'
+
 const locationOptions = ['All', 'South 40', 'Village & Off Campus'];
 const styleOptions = ['All','Modern', 'Traditional'];
 
@@ -28,14 +30,14 @@ class Main extends React.Component{
   render(){
     return(
       <Container>
-        <Row>
+        <Row md='2'>
           <Header />
-          <Col xs='6' className="listings">
+          <Col md='8' className="listings">
             <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection}/>
             <Filters selected={this.state.selectedStyle} options={styleOptions} onChange={this.onStyleSelection}/>
             <Listings selectedStyle={this.state.selectedStyle}/>
           </Col>
-          <Col xs='6' className="map"></Col>
+          <Col className="map"></Col>
         </Row>
       </Container>
     );
