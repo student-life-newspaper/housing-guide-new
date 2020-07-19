@@ -1,6 +1,15 @@
 import React from 'react';
 import { Container, Row, Col, CardDeck,
-  Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+  Button, Modal, ModalHeader, ModalBody, ModalFooter, 
+} from 'reactstrap';
+import ModalCarousel from './ModalCarousel.js'
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('../../public/img/beaumont/', false, /\.(png|jpe?g|svg)$/));
+console.log(images);
 
 export default class DormModal extends React.Component {
   constructor(props){
@@ -21,12 +30,12 @@ export default class DormModal extends React.Component {
       return (
         <div>
           <Modal className='dorm-modal w80' isOpen={this.props.modalIsOpen} size={'lg'}>
-            <ModalHeader close={closeBtn}>{dorm.name || null}</ModalHeader>
+            <ModalHeader close={closeBtn}>{dorm.name}</ModalHeader>
+            <ModalCarousel carouselImages={dorm.carouselImages} dormName={dorm.name} />
             <ModalBody>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>{dorm.longDesc}</p>
             </ModalBody>
             <ModalFooter>
-              <Button color="primary">Do Something</Button>{' '}
               <Button color="secondary" onClick={this.closeModal}>Cancel</Button>
             </ModalFooter>
           </Modal>
