@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/student-life-newspaper/housing-guide-new/static/css/main.7b0a67ba.chunk.css",
+    "main.js": "/student-life-newspaper/housing-guide-new/static/js/main.64ef7a04.chunk.js",
+    "main.js.map": "/student-life-newspaper/housing-guide-new/static/js/main.64ef7a04.chunk.js.map",
+    "runtime-main.js": "/student-life-newspaper/housing-guide-new/static/js/runtime-main.d2b14400.js",
+    "runtime-main.js.map": "/student-life-newspaper/housing-guide-new/static/js/runtime-main.d2b14400.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/student-life-newspaper/housing-guide-new/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7484155d.chunk.js": "/student-life-newspaper/housing-guide-new/static/js/2.7484155d.chunk.js",
+    "static/js/2.7484155d.chunk.js.map": "/student-life-newspaper/housing-guide-new/static/js/2.7484155d.chunk.js.map",
+    "index.html": "/student-life-newspaper/housing-guide-new/index.html",
+    "precache-manifest.1f33dd4390bb2c700e584257ea083afb.js": "/student-life-newspaper/housing-guide-new/precache-manifest.1f33dd4390bb2c700e584257ea083afb.js",
+    "service-worker.js": "/student-life-newspaper/housing-guide-new/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/student-life-newspaper/housing-guide-new/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.7b0a67ba.chunk.css.map": "/student-life-newspaper/housing-guide-new/static/css/main.7b0a67ba.chunk.css.map",
+    "static/js/2.7484155d.chunk.js.LICENSE.txt": "/student-life-newspaper/housing-guide-new/static/js/2.7484155d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/student-life-newspaper/housing-guide-new/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2b14400.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7484155d.chunk.js",
+    "static/css/main.7b0a67ba.chunk.css",
+    "static/js/main.64ef7a04.chunk.js"
+  ]
+}
