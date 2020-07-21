@@ -54,7 +54,7 @@ class Listings extends React.Component{
       <SingleListing dorm={dorm} key={dorm.shortName} selectDorm={this.selectDorm}/>
     );
     return (
-      <Row className='listing-container'>
+      <Row className='listing-container mt-3'>
         {list}
       <DormModal selectedDorm={this.state.selectedDorm} closeModal={this.closeModal} modalIsOpen={this.state.modalIsOpen}/>
       </Row>
