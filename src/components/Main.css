@@ -1,7 +1,23 @@
+* {
+  font-family: georgia, times, serif;
+}
+
 .dorm-thumbnail{
   width: 100%;
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.modal-divider-horizontal{
+  width: 100%;
+  height: 1px;
+  margin: 0 16px 16px 16px;
+  background-color: #b1170f;
+}
+
+.missing-facilitiy{
+  color: #808080;
+  text-decoration: line-through;
 }

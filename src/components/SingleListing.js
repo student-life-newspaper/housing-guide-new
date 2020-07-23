@@ -18,7 +18,7 @@ export default class SingleListing extends React.Component {
         <Card className='single-listing cursor-pointer w-100 mb-3' onClick={this.selectDorm}>
           <Row noGutters>
             <Col md='4'>
-              <img className='dorm-thumbnail' src={'/img/thumbs/' + this.props.dorm.shortName + '.png'} alt={dorm.shortName}/>
+              <img className='dorm-thumbnail' src={process.env.PUBLIC_URL + '/img/thumbs/' + this.props.dorm.shortName + '.png'} alt={dorm.shortName}/>
             </Col>
             <Col md='8'>
               <CardBody>

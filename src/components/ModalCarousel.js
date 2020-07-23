@@ -30,7 +30,7 @@ const ModalCarousel = (props) => {
         onExited={() => setAnimating(false)}
         key={item}
       >
-        <img src={'/img/' + props.dormName + '/' + item} />
+        <img src={process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item} alt={props.dormName + 'picture'}/>
       </CarouselItem>
     );
   });
