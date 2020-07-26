@@ -68,7 +68,7 @@ export default class DormModal extends React.Component {
     const timeElements = Object.keys(walkTimes).map(time => {
       if(dorm[time]){
         return (
-          <Col xs={{size: 12, offset: 1}} md={{size: 4, offset: 0}} className="text-center" key={time}> // should these be left justified??
+          <Col xs={{size: 12, offset: 1}} md={{size: 4, offset: 0}} className="text-center" key={time}>
             <p className="font-weight-bold mb-1">{walkTimes[time]}</p>
             <p>{dorm[time]} minutes</p>
           </Col>
@@ -96,7 +96,7 @@ export default class DormModal extends React.Component {
       return (
         <div>
           <Modal className='dorm-modal w80' isOpen={this.props.modalIsOpen} size={'lg'}>
-            <ModalCarousel carouselImages={dorm.carouselImages} dormName={dorm.name} />
+            <ModalCarousel carouselImages={dorm.carouselImages} dormName={dorm.shortName} />
             <ModalBody className="m-4">
               <div className='d-flex align-items-center justify-content-between'>
                 <h1 className='modal-title'>{dorm.name}</h1>
@@ -110,7 +110,7 @@ export default class DormModal extends React.Component {
                   {dorm.roomType[0].toUpperCase()}{dorm.roomType.slice(1)}
                 </Col>
                 <Col>
-                  `Bathroom Type`
+                  {dorm.bathroomType}
                 </Col>
               </Row>
               {dorm.longDesc &&

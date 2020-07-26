@@ -4,8 +4,17 @@ import { Carousel,CarouselItem,CarouselControl,CarouselIndicators } from 'reacts
 const ModalCarousel = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-  const items = props.carouselImages;
-
+  
+  let items = props.carouselImages;
+  for(let i = 0; i < items.length; ++i){
+    let value = items[i];
+    if(value.substring(0, 8) === "exterior"){
+      items.splice(i, 1);
+      items.unshift(value);
+      break;
+    }
+  }
+  
   const next = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
@@ -30,7 +39,9 @@ const ModalCarousel = (props) => {
         onExited={() => setAnimating(false)}
         key={item}
       >
-        <img src={process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item} alt={props.dormName + 'picture'}/>
+        <div style={{backgroundImage: "url(" + process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item + ")"}}>
+          <img src={process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item} alt={props.dormName + 'picture'} style={{visibility: "hidden"}}/>
+        </div>
       </CarouselItem>
     );
   });

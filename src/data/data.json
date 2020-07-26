@@ -28,7 +28,7 @@
         "carouselImages": [
             "Triple.jpg",
             "Double.jpg",
-            "Beau.jpg"
+            "exterior.jpg"
         ]
     },
     "Danforth": {
@@ -58,11 +58,11 @@
         "longDesc": "Danforth House, named after Elizabeth \u2018Ibby\u2019 Danforth\u2014wife of William Danforth, who served as Chancellor from 1971-1995\u2014is the largest freshman dorm on the South 40. The four-story modern dorm houses a total of 180 residents. Danforth is also one of three dorms that make up the William Greenleaf Eliot Residential College, which was established in 1998. The residential college, nicknamed \u201cWGE,\u201d (pronounced wig-ee) maintains traditions like WGE Waffles, held once a month, and WGE on the Water, an annual canoe trip.",
         "coordinates": "38.644684, -90.315402",
         "carouselImages": [
+            "exterior.jpg",
             "BR2.JPG",
             "BA.JPG",
             "BR.JPG",
-            "BA2.JPG",
-            "DanforthHouse.jpg"
+            "BA2.JPG"
         ]
     },
     "Dardick": {
@@ -94,7 +94,7 @@
         "carouselImages": [
             "LOUNGE2.JPG",
             "LOUNGE.JPG",
-            "O.JPG",
+            "exterior.JPG",
             "PARKING.JPG",
             "BR.JPG"
         ]
@@ -127,6 +127,7 @@
         "coordinates": "38.645293, -90.315491",
         "carouselImages": [
             "IMG_5905.jpg",
+            "exterior.jpg",
             "IMG_5915.jpg",
             "IMG_6013.jpg",
             "IMG_5916.jpg",
@@ -134,8 +135,7 @@
             "IMG_5919.jpg",
             "IMG_5921.jpg",
             "IMG_5934.jpg",
-            "IMG_6018.jpg",
-            "IMG_5894.jpg"
+            "IMG_6018.jpg"
         ]
     },
     "Eliot A": {
@@ -170,10 +170,10 @@
             "8suite.JPG",
             "2Back.JPG",
             "16Library.JPG",
+            "exterior.JPG",
             "18Laundry.JPG",
             "12StudyRoom.JPG",
             "17Kitchen.JPG",
-            "1Front.JPG",
             "13Lounge.JPG",
             "10Bath.JPG",
             "11Hall.JPG",
@@ -211,9 +211,9 @@
             "DSC_0447_1.jpg",
             "DSC_0017_1.jpg",
             "DSC_0456.jpg",
+            "exterior.jpg",
             "DSC_0440_1.jpg",
             "DSC_0442_1.jpg",
-            "DSC_0003_1.jpg",
             "DSC_0460.jpg",
             "DSC_0007_1.jpg",
             "DSC_0015.jpg",
@@ -248,6 +248,7 @@
         "coordinates": "38.644971, -90.311799",
         "carouselImages": [
             "IMG_0505.JPG",
+            "exterior.JPG",
             "IMG_0500.JPG",
             "IMG_0502.JPG",
             "IMG_0477.JPG",
@@ -256,7 +257,6 @@
             "IMG_0493.JPG",
             "IMG_0508.JPG",
             "IMG_0496.JPG",
-            "IMG_0509.JPG",
             "IMG_0481.JPG"
         ]
     },
@@ -288,7 +288,7 @@
         "coordinates": "38.645365, -90.314727",
         "carouselImages": [
             "IMG_3694.JPG",
-            "Lee.jpg",
+            "exterior.jpg",
             "IMG_3700.JPG",
             "IMG_3705.JPG",
             "IMG_3707.JPG",
@@ -333,7 +333,7 @@
             "IMG_3108.jpg",
             "IMG_3109.JPG",
             "IMG_3032.JPG",
-            "Lein-2.jpg",
+            "exterior.jpg",
             "IMG_3028.JPG",
             "IMG_3070.jpg",
             "IMG_3104.JPG",
@@ -371,8 +371,8 @@
             "DSC_0435.JPG",
             "DSC_0436.JPG",
             "DSC_0387.JPG",
-            "Park.jpg",
             "DSC_0454.JPG",
+            "exterior.jpg",
             "DSC_0444.JPG",
             "DSC_0428.JPG",
             "DSC_0399.JPG",
@@ -406,7 +406,7 @@
         "longDesc": "A part of the Umrath and South 40 Residential College (USoFo), Umrath House itself is fairly new, as it opened in 2009. The dorm is named after Helen Umrath, the wife of Karl D. Umrath, who Umrath Hall is named after. The dorm\u2019s first floor houses Bear Necessities, a not-for-profit gift store operated by the Women\u2019s Society of Washington University. USoFo traditions include Whale Waffles and Rum-B-Que.",
         "coordinates": "38.644975, -90.313673",
         "carouselImages": [
-            "jvphoto-9.jpg",
+            "exterior.jpg",
             "jvphoto-6.jpg",
             "jvphoto-7.jpg",
             "jvphoto-5.jpg",
@@ -443,7 +443,7 @@
         "coordinates": "38.644450, -90.312938",
         "carouselImages": [
             "IMG_4358.jpg",
-            "IMG_4364.jpg",
+            "exterior.jpg",
             "IMG_4348.jpg",
             "IMG_4343.jpg",
             "IMG_4334.jpg",
@@ -479,10 +479,10 @@
         "carouselImages": [
             "DSC_0287.JPG",
             "DSC_0284.JPG",
+            "exterior.JPG",
             "DSC_0281.JPG",
             "DSC_0283.JPG",
             "DSC_0268.JPG",
-            "DSC_0264.JPG",
             "DSC_0267.JPG",
             "DSC_0277.JPG"
         ]
@@ -516,9 +516,9 @@
         "carouselImages": [
             "IMG_3092.jpg",
             "IMG_3093.jpg",
-            "IMG_3091.jpg",
             "IMG_3108.jpg",
             "IMG_3109.jpg",
+            "exterior.jpg",
             "IMG_3110.jpg",
             "IMG_3113.jpg",
             "IMG_3112.JPG",
@@ -552,9 +552,9 @@
         "longDesc": "Spacious and well-appointed, Liggett House is the only sophomore housing directly attached to a freshman dorm.",
         "coordinates": "38.644597, -90.312051",
         "carouselImages": [
+            "exterior.jpg",
             "IMG_5909.jpg",
-            "IMG_5908.jpg",
-            "LK.jpg"
+            "IMG_5908.jpg"
         ]
     },
     "Mudd": {
@@ -587,9 +587,9 @@
             "DSC_0031.JPG",
             "DSC_0022.JPG",
             "DSC_0008.JPG",
+            "exterior.jpg",
             "DSC_0068.JPG",
             "DSC_0080.JPG",
-            "Mudd.jpg",
             "DSC_0062.JPG",
             "DSC_0005.JPG"
         ]
@@ -622,7 +622,7 @@
         "coordinates": "38.643536, -90.313327",
         "carouselImages": [
             "DSC08173.JPG",
-            "Myers.jpg",
+            "exterior.jpg",
             "DSC08191.JPG",
             "DSC07710.JPG",
             "DSC08178.JPG",
@@ -657,7 +657,7 @@
         "coordinates": "38.645702, -90.314309",
         "carouselImages": [
             "_DSC5569.jpg",
-            "_DSC5485 edited.jpg",
+            "exterior.jpg",
             "_DSC5562.jpg",
             "_DSC5567.jpg",
             "_DSC5559.jpg"
@@ -690,7 +690,7 @@
         "longDesc": "Although Rutledge Hall is an older traditional dorm, it makes up for a lack of certain amenities and bedroom space with a large common room, balcony and lower cost. Its location is close to both a Circulator stop and Bear's Den, and the suite-style housing allows for close friendships to form between all six suitemates.",
         "coordinates": "38.645092, -90.315189",
         "carouselImages": [
-            "Rutledge.jpg",
+            "exterior.jpg",
             "SL5A8586.jpg",
             "SL5A8582.jpg",
             "SL5A8581.jpg"
@@ -723,10 +723,10 @@
         "longDesc": "Shanedling Hall, while far from Danforth Campus, offers a traditional living style with six-person suites. Although there is only one bathroom per suite, the common rooms are large and offer a friendly living environment.",
         "coordinates": "38.645032, -90.315785",
         "carouselImages": [
-            "Shanedling.jpg",
-            "Shanedling Suite Common Room.jpg",
-            "Shanedling Bedroom.jpg",
-            "Shanedling Suite Common Room 2.jpg"
+            "ShanedlingBedroom.jpg",
+            "exterior.jpg",
+            "ShanedlingSuiteCommonRoom.jpg",
+            "ShanedlingSuiteCommonRoom2.jpg"
         ]
     },
     "Shepley": {
@@ -756,9 +756,9 @@
         "longDesc": "Shepley House is the furthest dorm from Danforth Campus, its nice units make it a good option for sophomores.",
         "coordinates": "38.644319, -90.315897",
         "carouselImages": [
-            "Shepley Common Room.JPG",
-            "Shepley Bedroom.JPG",
-            "Shepley.jpg"
+            "exterior.jpg",
+            "ShepleyCommonRoom.JPG",
+            "ShepleyBedroom.JPG"
         ]
     },
     "SoFoHo": {
@@ -788,11 +788,11 @@
         "longDesc": "South 40 House (SoFoHo) is an unbeatable choice. With Bear\u2019s Den on the ground floor and the fitness center just one floor above, this dorm's benefits will become even clearer during the cold winter months when you can grab food and workout without even leaving the building.",
         "coordinates": "38.644878, -90.313103",
         "carouselImages": [
-            "SoFoHo Bedroom.JPG",
-            "SoFoHo Hallway.JPG",
-            "South 40 House 2.jpg",
-            "SoFoHo Bathroom.JPG",
-            "SoFoHo Suite Common Room.jpg"
+            "SoFoHoBathroom.JPG",
+            "sofoho.jpg",
+            "SoFoHoBedroom.JPG",
+            "SoFoHoSuiteCommonRoom.jpg",
+            "SoFoHoHallway.JPG"
         ]
     },
     "Wheeler": {
@@ -822,12 +822,12 @@
         "longDesc": "Although one of the farthest dorms from Danforth Campus, Wheeler House's homey living environment makes this dorm a great choice for those who want a comfortable, cabin-like feel.",
         "coordinates": "38.643793, -90.315788",
         "carouselImages": [
-            "Wheeler.jpg",
-            "Wheeler Common Room.JPG",
-            "Wheeler Floor Common Room.JPG",
-            "Wheeler Lobby2.JPG",
-            "Wheeler Bedroom1.JPG",
-            "Wheeler Lobby.JPG"
+            "exterior.jpg",
+            "WheelerLobby2.JPG",
+            "WheelerCommonRoom.JPG",
+            "WheelerFloorCommonRoom.JPG",
+            "WheelerBedroom1.JPG",
+            "WheelerLobby.JPG"
         ]
     },
     "Greenway Apartments": {
@@ -858,8 +858,8 @@
         "coordinates": "38.654472, -90.30611",
         "carouselImages": [
             "External.JPG",
-            "newexts-2.jpg",
             "Bedroom.JPG",
+            "exterior.jpg",
             "Bathroom.JPG",
             "Entry.JPG",
             "Kitchen.JPG",
@@ -897,7 +897,7 @@
             "IMG_7430.JPG",
             "IMG_7432.JPG",
             "IMG_7433.JPG",
-            "millbrookoutside-2.jpg"
+            "exterior.jpg"
         ]
     },
     "University Drive": {
@@ -927,8 +927,8 @@
         "longDesc": "While a bit outdated, the University Drive apartments offer true apartment living while being extremely close to campus.",
         "coordinates": "38.650952, -90.308780",
         "carouselImages": [
+            "uDrive.jpg",
             "1.jpeg",
-            "4.jpg",
             "2.jpeg",
             "3.jpeg"
         ]
@@ -962,8 +962,8 @@
         "carouselImages": [
             "veast-9.jpg",
             "veast-8.jpg",
+            "exterior.jpg",
             "veast-3.jpg",
-            "veast-2.jpg",
             "veast-6.jpg",
             "veast-7.jpg",
             "veast-5.jpg",
@@ -1004,7 +1004,7 @@
             "rosedale-2.jpg",
             "rosedale-3.jpg",
             "rosedale-1.jpg",
-            "rosedale-8.jpg",
+            "exterior.jpg",
             "rosedale-9.jpg"
         ]
     },
@@ -1035,9 +1035,9 @@
         "longDesc": "While living in The Lofts can make Wash. U. students feel like they live in more of a city environment, some find that the cost outweighs the nice amenities.",
         "coordinates": "38.655998, -90.301450",
         "carouselImages": [
+            "exterior.jpg",
             "4.JPG",
             "5.JPG",
-            "7.jpg",
             "6.JPG",
             "2.JPG",
             "3.JPG",
@@ -1111,7 +1111,7 @@
         "carouselImages": [
             "K.jpg",
             "LR.jpg",
-            "O.jpg",
+            "exterior.jpg",
             "Laundry.jpg",
             "DR.jpg",
             "520.jpg",
@@ -1146,10 +1146,10 @@
         "longDesc": "The Village House and Lopata House are attractive options for upperclassmen looking for a community similar to the South 40. The Village House\u2019s dining hall, mailroom and convenient location help outweigh the drawback of not having a common room in each four-person suite. These buildings also offer the Village BLOC Program, a student-driven living and learning community that features housing groups themed around shared interests.",
         "coordinates": "38.651244, -90.314620",
         "carouselImages": [
-            "Village House Common Room.jpg",
-            "Village House Suite hallway thing.jpg",
-            "Lopata House.jpg",
-            "Village House Bedroom.jpg"
+            "VillageHouseCommonRoom.jpg",
+            "VillageHouseSuitehallwaything.jpg",
+            "VillageHouseBedroom.jpg",
+            "exterior.jpg"
         ]
     }
 }
