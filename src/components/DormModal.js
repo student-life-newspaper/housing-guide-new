@@ -93,16 +93,16 @@ export default class DormModal extends React.Component {
       return <div></div>
     }else{
       const dorm = this.props.selectedDorm;
+      const closeButton = <button className="close" onClick={this.closeModal}>&times;</button>;
       return (
         <div>
-          <Modal className='dorm-modal w80' isOpen={this.props.modalIsOpen} size={'lg'}>
+          <Modal className='dorm-modal w80 my-0' isOpen={this.props.modalIsOpen} size={'lg'}>
+            <ModalHeader close={closeButton}></ModalHeader>
             <ModalCarousel carouselImages={dorm.carouselImages} dormName={dorm.shortName} />
             <ModalBody className="m-4">
-              <div className='d-flex align-items-center justify-content-between'>
-                <h1 className='modal-title'>{dorm.name}</h1>
-                <button className="close" onClick={this.closeModal}>&times;</button>
-              </div>
+              <h1 className='modal-title text-center'>{dorm.name}</h1>
               <Row className='text-center mb-3 mt-4 font-weight-bold'>
+                <div className="modal-divider-horizontal mt-1"></div>
                 <Col>
                   {dorm.style} housing
                 </Col>

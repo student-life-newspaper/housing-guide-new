@@ -39,7 +39,7 @@ const ModalCarousel = (props) => {
         onExited={() => setAnimating(false)}
         key={item}
       >
-        <div style={{backgroundImage: "url(" + process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item + ")"}}>
+        <div className="modal-carousel-img" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item + ")"}}>
           <img src={process.env.PUBLIC_URL + '/img/' + props.dormName + '/' + item} alt={props.dormName + 'picture'} style={{visibility: "hidden"}}/>
         </div>
       </CarouselItem>
@@ -51,6 +51,7 @@ const ModalCarousel = (props) => {
       activeIndex={activeIndex}
       next={next}
       previous={previous}
+      className="modal-carousel"
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
