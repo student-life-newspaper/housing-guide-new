@@ -3,7 +3,7 @@ import { Container, Row, Col, CardDeck } from 'reactstrap';
 import SingleListing from './SingleListing.js'
 import DormModal from './DormModal.js'
 
-import jsonData from '../data/south40freshman.json';
+import jsonData from '../data/data.json';
 
 const dormData = Object.values(jsonData);
 const dormNames = Object.keys(jsonData);
