@@ -13,7 +13,7 @@ class Listings extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      currentStyle: this.props.selectedStyle,
+      currentLocation: this.props.selectedLocation,
       selectedDorm: null,
       modalIsOpen: false
     };
@@ -24,11 +24,11 @@ class Listings extends React.Component{
   
   getData(){
     let data;
-    if(this.props.selectedStyle !== 'All'){
+    if(this.props.selectedLocation !== 'All'){
       data = dormData.filter((dorm) => {
-        return dorm.style === this.props.selectedStyle;
+        return dorm.location === this.props.selectedLocation;
       });
-    }else{
+    } else {
       data = dormData;
     }
     

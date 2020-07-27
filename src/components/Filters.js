@@ -2,12 +2,13 @@ import React from 'react';
 import { ButtonToggle, ButtonGroup } from 'reactstrap';
 
 class Filters extends React.Component {
-  render(){
+  render() {
     let buttons = this.props.options.map(option => {
       return <ButtonToggle 
                 active={this.props.selected === option} 
-                outline color='primary' 
                 key={option}
+                color='primary'
+                className="filter-btn"
                 onClick={(e) => this.props.onChange(option, e)}>
                 {option}
               </ButtonToggle>
