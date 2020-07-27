@@ -6,25 +6,19 @@ import Listings from './Listings.js';
 
 import './Main.css'
 
-const locationOptions = ['All', 'South 40', 'Village & Off Campus'];
-const styleOptions = ['All','Modern', 'Traditional'];
+const locationOptions = ['All', 'South 40', 'Village', 'Off Campus'];
 
 class Main extends React.Component{
   constructor(props){
     super(props);
     this.onLocationSelection = this.onLocationSelection.bind(this);
-    this.onStyleSelection = this.onStyleSelection.bind(this);
     this.state = {
-      selectedLocation: 'All',
-      selectedStyle: 'All'
+      selectedLocation: 'All'
     };
   }
   
   onLocationSelection(location) {
     this.setState({selectedLocation: location});
-  }
-  onStyleSelection(style){
-    this.setState({selectedStyle: style});
   }
   
   render(){
@@ -33,9 +27,10 @@ class Main extends React.Component{
         <Row md='2'>
           <Header />
           <Col md='8' className="listings">
-            <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection}/>
-            <Filters selected={this.state.selectedStyle} options={styleOptions} onChange={this.onStyleSelection}/>
-            <Listings selectedStyle={this.state.selectedStyle}/>
+            <Row>
+              <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection}/>
+            </Row>
+            <Listings selectedLocation={this.state.selectedLocation}/>
           </Col>
           <Col className="map"></Col>
         </Row>

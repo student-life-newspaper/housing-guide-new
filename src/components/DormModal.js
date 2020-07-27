@@ -3,6 +3,7 @@ import { Container, Row, Col, CardDeck,
   Button, Modal, ModalHeader, ModalBody, ModalFooter, 
 } from 'reactstrap';
 import ModalCarousel from './ModalCarousel.js'
+import ModalMap from './ModalMap.js'
 
 const facilities = {
   studyRoom: "Study room",
@@ -121,6 +122,10 @@ export default class DormModal extends React.Component {
               }
               {this.getWalkTimes(dorm)}
               {this.getFacilities(dorm)}
+              <Row className="modal-map-container">
+                <div className="modal-divider-horizontal mt-4"></div>
+                <ModalMap coordinates={dorm.coordinates} />
+              </Row>
             </ModalBody>
             <ModalFooter>
               <Button color="secondary" onClick={this.closeModal}>Close</Button>

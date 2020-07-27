@@ -2,7 +2,7 @@
     "Beaumont": {
         "name": "Beaumont",
         "shortName": "beaumont",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "rooms with Singles, Doubles, and Triples",
         "bathroomType": "Common Bathroom",
@@ -34,7 +34,7 @@
     "Danforth": {
         "name": "Danforth",
         "shortName": "danforth",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -68,7 +68,7 @@
     "Dardick": {
         "name": "Dardick",
         "shortName": "dardick",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -102,7 +102,7 @@
     "Dauten": {
         "name": "Dauten",
         "shortName": "dauten",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "suites with Singles and Doubles (6 people)",
         "bathroomType": "Private bathroom in suite",
@@ -141,7 +141,7 @@
     "Eliot A": {
         "name": "Eliot A",
         "shortName": "eliota",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Singles and Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -184,7 +184,7 @@
     "Hurd": {
         "name": "Hurd",
         "shortName": "hurd",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "suites with Singles and Doubles (6 people)",
         "bathroomType": "Private bathroom in suite",
@@ -223,7 +223,7 @@
     "Koenig": {
         "name": "Koenig",
         "shortName": "koenig",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Doubles and Triples",
         "bathroomType": "Private bathroom in suite",
@@ -263,7 +263,7 @@
     "Lee": {
         "name": "Lee",
         "shortName": "lee",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "rooms with Doubles and Triples",
         "bathroomType": "Common Bathroom",
@@ -299,7 +299,7 @@
     "Lien": {
         "name": "Lien",
         "shortName": "lien",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -344,7 +344,7 @@
     "Park": {
         "name": "Park",
         "shortName": "park",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Doubles (6 people)",
         "bathroomType": "Private bathroom in suite",
@@ -382,7 +382,7 @@
     "Umrath": {
         "name": "Umrath",
         "shortName": "umrath",
-        "location": "s40freshmen",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "suites with Doubles and Triples",
         "bathroomType": "Private bathroom in suite",
@@ -418,7 +418,7 @@
     "Eliot B": {
         "name": "Eliot B",
         "shortName": "eliotb",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles and Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -453,7 +453,7 @@
     "Gregg": {
         "name": "Gregg",
         "shortName": "gregg",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles and Doubles (2 people)",
         "bathroomType": "Private bathroom in suite",
@@ -490,7 +490,7 @@
     "Hitzeman": {
         "name": "Hitzeman",
         "shortName": "hitzeman",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "Suite with Singles and Doubles (4 people)",
         "bathroomType": "Private bathroom in suite",
@@ -528,7 +528,7 @@
     "Liggett": {
         "name": "Liggett",
         "shortName": "liggett",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles",
         "bathroomType": "Private bathroom in suite",
@@ -560,7 +560,7 @@
     "Mudd": {
         "name": "Mudd",
         "shortName": "mudd",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles and Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -597,7 +597,7 @@
     "Myers": {
         "name": "Myers",
         "shortName": "myers",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "Suite with Singles and Doubles (4 people)",
         "bathroomType": "Private bathroom in suite",
@@ -632,7 +632,7 @@
     "Nemerov": {
         "name": "Nemerov",
         "shortName": "nemerov",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles",
         "bathroomType": "Private bathroom in suite",
@@ -666,7 +666,7 @@
     "Rutledge": {
         "name": "Rutledge",
         "shortName": "rutledge",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "Suite with Singles and Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -699,7 +699,7 @@
     "Shanedling": {
         "name": "Shanedling",
         "shortName": "shanedling",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Traditional",
         "roomType": "Suite with Singles and Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -732,7 +732,7 @@
     "Shepley": {
         "name": "Shepley",
         "shortName": "shepley",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles",
         "bathroomType": "Private bathroom in suite",
@@ -764,7 +764,7 @@
     "SoFoHo": {
         "name": "SoFoHo",
         "shortName": "sofoho",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles",
         "bathroomType": "Private bathroom in suite",
@@ -798,7 +798,7 @@
     "Wheeler": {
         "name": "Wheeler",
         "shortName": "wheeler",
-        "location": "s40sophomores",
+        "location": "South 40",
         "style": "Modern",
         "roomType": "Suite with Singles and Doubles",
         "bathroomType": "Private bathroom in suite",
@@ -833,7 +833,7 @@
     "Greenway Apartments": {
         "name": "Greenway Apartments",
         "shortName": "greenway",
-        "location": "offCampus",
+        "location": "Off Campus",
         "style": "Modern",
         "roomType": "Apartments and townhomes with singles (1-3 singles per suite)",
         "bathroomType": "Private bathroom in apartment",
@@ -903,7 +903,7 @@
     "University Drive": {
         "name": "University Drive",
         "shortName": "uDrive",
-        "location": "offCampus",
+        "location": "Off Campus",
         "style": "Modern",
         "roomType": "Apartments with 3 singles (One 2 bedroom, one 4 bedroom)",
         "bathroomType": "Private bathroom in apartment",
@@ -936,7 +936,7 @@
     "Village East": {
         "name": "Village East",
         "shortName": "vEast",
-        "location": "village",
+        "location": "Village",
         "style": "Modern",
         "roomType": "Apartments with 4 singles",
         "bathroomType": "Private bathroom in apartment",
@@ -973,7 +973,7 @@
     "Rosedale Apartments": {
         "name": "Rosedale Apartments",
         "shortName": "rosedale",
-        "location": "offCampus",
+        "location": "Off Campus",
         "style": "Mix",
         "roomType": "Apartments with 1-2 singles",
         "bathroomType": "Private bathroom in apartment",
@@ -1011,7 +1011,7 @@
     "The Lofts": {
         "name": "The Lofts",
         "shortName": "lofts",
-        "location": "offCampus",
+        "location": "Off Campus",
         "style": "Modern",
         "roomType": "Apartments with 3 singles (Limited 2 person and 1 person apartments available)",
         "bathroomType": "Private bathroom in apartment",
@@ -1047,7 +1047,7 @@
     "Washington Ave Apartments": {
         "name": "Washington Ave Apartments",
         "shortName": "washAve",
-        "location": "offCampus",
+        "location": "Off Campus",
         "style": "Modern",
         "roomType": "Apartments with 1-3 singles",
         "bathroomType": "Private bathroom in apartment",
@@ -1085,7 +1085,7 @@
     "520 Kingsland": {
         "name": "520 Kingsland",
         "shortName": "kingsland",
-        "location": "offCampus",
+        "location": "Off Campus",
         "style": "Modern",
         "roomType": "Apartments with 3 singles and 3 bathooms",
         "bathroomType": "Private bathroom in apartment",
@@ -1122,7 +1122,7 @@
     "Village & Lopata House": {
         "name": "Village & Lopata House",
         "shortName": "lopata",
-        "location": "village",
+        "location": "Village",
         "style": "Modern",
         "roomType": "Suites with 4 singles",
         "bathroomType": "Private bathroom in suite",
