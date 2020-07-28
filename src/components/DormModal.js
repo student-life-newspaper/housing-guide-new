@@ -41,16 +41,17 @@ export default class DormModal extends React.Component {
   getFacilities(dorm){
     const facilitiesElements = Object.keys(facilities)
     .sort((key1, key2) => {
-      if(dorm[key1] === 'No' && dorm[key2] === 'Yes')
+      if(dorm[key1] === 'No' && dorm[key2].substring(0, 3) === 'Yes')
         return +1
-      if(dorm[key1] === 'Yes' && dorm[key2] === 'No')
+      if(dorm[key1].substring(0, 3) === 'Yes' && dorm[key2] === 'No')
         return -1
       
       return 0
     })
     .map(key => {
-      if(dorm[key] === 'Yes')
-        return (<Col xs={{size: 12, offset: 1}} md={{size: 4, offset: 0}} className="mb-1" key={key}> - {facilities[key]}</Col>)
+      if(dorm[key].substring(0, 3) === 'Yes'){
+        return (<Col xs={{size: 12, offset: 1}} md={{size: 4, offset: 0}} className="mb-1" key={key}> - {facilities[key]}</Col>);
+      }
       else if(dorm[key] === 'No')
         return (<Col xs={{size: 12, offset: 1}} md={{size: 4, offset: 0}} className="mb-1 missing-facilitiy" key={key}> - {facilities[key]}</Col>)
       else
