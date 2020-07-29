@@ -1,11 +1,32 @@
 import React from 'react';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-// import 'leaflet/dist/leaflet.css';
 
 class ModalMap extends React.Component {
+  constructor(props){
+    super(props);
+    this.getPosition = this.getPosition.bind(this);
+  }
+    
+  getPosition(coordinates){
+    const position = this.props.coordinates.split(', ');
+    if(position.length === 2)
+      return position;
+    else if((position.length % 2) === 0){
+      let avgLat = 0;
+      let avgLong = 0;
+      for(let i = 0; i < position.length; ++i){
+        if((i % 2) === 0)
+          avgLat  += position[i]/(position.length/2);
+        else
+          avgLong += position[i]/(position.length/2);
+      }
+      return [avgLat, avgLong];
+    }
+  }
   
   render() {
-    const position = this.props.coordinates.split(', ');
+    console.log(this.props.coordinates)
+    const position = this.getPosition(this.props.coordinates);
     const id = 'ck9nkgte3058o1ip80xvsnybg';
     const accessToken = 'pk.eyJ1Ijoic3R1ZGVudGxpZmVuZXdzcGFwZXIiLCJhIjoiY2s5bmhrZTFzMDJjajNmbzd2eHpoc3BraCJ9.mfW3MvzjG6Rvch9CF1q-Sg';
     return (
