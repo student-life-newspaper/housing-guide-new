@@ -34,7 +34,7 @@ class Main extends React.Component {
             <Listings selectedLocation={this.state.selectedLocation} />
           </Col>
           <Col md="6" className="side-map pl-0">
-            <SideMap />
+            <SideMap selectedLocation={this.state.selectedLocation}/>
           </Col>
         </Row>
       </Container>
