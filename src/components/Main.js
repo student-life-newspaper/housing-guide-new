@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Header from './Header.js';
 import Filters from './Filters.js';
 import Listings from './Listings.js';
+import SideMap from './SideMap.js'
 
 import './Main.css'
 
@@ -23,16 +24,18 @@ class Main extends React.Component{
   
   render(){
     return(
-      <Container>
-        <Row md='2'>
+      <Container className='housing-container'>
+        <Row>
           <Header />
-          <Col md='8' className="listings">
+          <Col md='6' className="listings">
             <Row>
               <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection}/>
             </Row>
             <Listings selectedLocation={this.state.selectedLocation}/>
           </Col>
-          <Col className="map"></Col>
+          <Col md='6' className="side-map pl-0">
+            <SideMap />
+          </Col>
         </Row>
       </Container>
     );
