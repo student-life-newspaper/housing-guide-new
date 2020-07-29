@@ -5,6 +5,7 @@ class ModalMap extends React.Component {
   constructor(props){
     super(props);
     this.getPosition = this.getPosition.bind(this);
+    this.getMarkers = this.getMarkers.bind(this);
   }
     
   getPosition(coordinates){
@@ -24,9 +25,32 @@ class ModalMap extends React.Component {
     }
   }
   
+  getMarkers(coordinates){
+    const position = this.props.coordinates.split(', ');
+    if((position.length % 2) === 0){
+      let latArray = [];
+      let longArray = [];
+      for(let i = 0; i < position.length; ++i){
+        if((i % 2) === 0)
+          latArray.push(position[i]);
+        else
+          longArray.push(position[i]);
+      }
+      let markers = [];
+      for(let i = 0; i < latArray.length; ++i){
+        markers.push(<Marker position={[latArray[i], longArray[i]]}></Marker>);
+      }
+      return markers;
+    } else {
+      console.error('Invalid coordinates for current dorm');
+      return null;
+    }
+  }
+  
   render() {
     console.log(this.props.coordinates)
     const position = this.getPosition(this.props.coordinates);
+    const markers = this.getMarkers(this.props.coordinates);
     const id = 'ck9nkgte3058o1ip80xvsnybg';
     const accessToken = 'pk.eyJ1Ijoic3R1ZGVudGxpZmVuZXdzcGFwZXIiLCJhIjoiY2s5bmhrZTFzMDJjajNmbzd2eHpoc3BraCJ9.mfW3MvzjG6Rvch9CF1q-Sg';
     return (
@@ -43,7 +67,7 @@ class ModalMap extends React.Component {
            zoomOffset={-1}
            url={'https://api.mapbox.com/styles/v1/studentlifenewspaper/' + id + '/tiles/{z}/{x}/{y}?access_token=' + accessToken}
         />
-      <Marker position={position}></Marker>
+      {markers}
       </Map>
     );
   }
