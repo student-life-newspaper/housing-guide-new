@@ -788,8 +788,8 @@
         "longDesc": "South 40 House (SoFoHo) is an unbeatable choice. With Bear\u2019s Den on the ground floor and the fitness center just one floor above, this dorm's benefits will become even clearer during the cold winter months when you can grab food and workout without even leaving the building.",
         "coordinates": "38.644878, -90.313103",
         "carouselImages": [
+            "exterior.jpg",
             "SoFoHoBathroom.JPG",
-            "sofoho.jpg",
             "SoFoHoBedroom.JPG",
             "SoFoHoSuiteCommonRoom.jpg",
             "SoFoHoHallway.JPG"
@@ -927,8 +927,8 @@
         "longDesc": "While a bit outdated, the University Drive apartments offer true apartment living while being extremely close to campus.",
         "coordinates": "38.650952, -90.308780",
         "carouselImages": [
-            "uDrive.jpg",
             "1.jpeg",
+            "exterior.jpg",
             "2.jpeg",
             "3.jpeg"
         ]
@@ -1074,11 +1074,11 @@
             "6665-10.jpg",
             "6665-9.jpg",
             "6665-8.jpg",
+            "exterior.jpg",
             "6665-3.jpg",
             "6665-2.jpg",
             "6665-5.jpg",
             "6665-4.jpg",
-            "6665-6.jpg",
             "6665-7.jpg"
         ]
     },
