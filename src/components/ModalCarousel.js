@@ -41,7 +41,7 @@ const ModalCarousel = (props) => {
       key={item}
     >
       <div className="modal-carousel-img" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/${props.dormName}/${item})` }}>
-        <img src={`${process.env.PUBLIC_URL}/img/${props.dormName}/${item}`} alt={`${props.dormName}picture`} style={{ visibility: 'hidden' }} />
+        <img src={`${process.env.PUBLIC_URL}/img/${props.dormName}/${item}`} alt={`${props.dormName} picture`} style={{ visibility: 'hidden' }} />
       </div>
     </CarouselItem>
   ));

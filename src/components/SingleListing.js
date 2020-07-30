@@ -21,10 +21,12 @@ export default class SingleListing extends React.Component {
     return (
       <Card className="single-listing cursor-pointer w-100 mb-3" tabIndex="0" onClick={this.selectDorm}>
         <Row noGutters>
-          <Col md="4">
-            <img className="dorm-thumbnail" src={`${process.env.PUBLIC_URL}/img/thumbs/${this.props.dorm.shortName}.png`} alt={dorm.shortName} />
+          <Col sm="4">
+            <div className="dorm-thumbnail-container" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/thumbs/${this.props.dorm.shortName}.png)`}}>
+              <img className="dorm-thumbnail" src={`${process.env.PUBLIC_URL}/img/thumbs/${this.props.dorm.shortName}.png`} alt={dorm.shortName} />
+            </div>
           </Col>
-          <Col md="8">
+          <Col sm="8">
             <CardBody>
               <CardTitle tag="h2">{dorm.name}</CardTitle>
               <CardText>{`${dorm.style} ${dorm.roomType.charAt(0).toLowerCase()}${dorm.roomType.slice(1)}`}</CardText>

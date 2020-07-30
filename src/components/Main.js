@@ -24,7 +24,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <Container className="housing-container">
+      <Container fluid={true} className="housing-container px-5">
         <Row>
           <Header />
           <Col md="6" className="listings">
