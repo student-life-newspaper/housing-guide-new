@@ -3,10 +3,22 @@ import {
   Map, TileLayer, Marker, Popup,
 } from 'react-leaflet';
 
+// https://github.com/PaulLeCam/react-leaflet/issues/453#issuecomment-410450387
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+});
+
 const locationPositions = {
   'All': {
     'coordinates': [38.648435, -90.307769],
-    'zoom': 14,
+    'zoom': 14.5,
   },
   'South 40': {
     'coordinates': [38.644432, -90.313888],
@@ -23,11 +35,55 @@ const locationPositions = {
 }
 
 class SideMap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      markers: null,
+    };
+    this.getMarkers = this.getMarkers.bind(this);
+  }
+  
+  componentDidUpdate(prevProps) {
+    if (prevProps.data !== this.props.data) {
+      this.getMarkers(this.props.data);
+    }
+  }
+  
+  componentDidMount(){
+    this.getMarkers(this.props.data);
+  }
+  
+  getMarkers(data) {
+    let markers = [];
+    //let data = this.state.data;
+    for (let dorm in data) {
+      if(data[dorm].hasOwnProperty('coordinates')){
+        const position = data[dorm]['coordinates'].split(', ');
+        if ((position.length % 2) === 0) {
+          const latArray = [];
+          const longArray = [];
+          for (let i = 0; i < position.length; ++i) {
+            if ((i % 2) === 0) latArray.push(position[i]);
+            else longArray.push(position[i]);
+          }
+          for (let i = 0; i < latArray.length; ++i) {
+            markers.push(<Marker position={[latArray[i], longArray[i]]} key={latArray[i]}></Marker>);
+          }
+        } else {
+          console.error('Invalid coordinates for current dorm');          
+        }
+      }
+    }
+    this.setState({ markers: markers });
+  }
+  
   render() {
     const position = locationPositions[this.props.selectedLocation].coordinates;
     const zoom = locationPositions[this.props.selectedLocation].zoom;
     const id = 'ck9nkgte3058o1ip80xvsnybg';
     const accessToken = 'pk.eyJ1Ijoic3R1ZGVudGxpZmVuZXdzcGFwZXIiLCJhIjoiY2s5bmhrZTFzMDJjajNmbzd2eHpoc3BraCJ9.mfW3MvzjG6Rvch9CF1q-Sg';
+    const markers = this.state.markers;
+    console.log(markers)
     return (
       <Map
         center={position}
@@ -42,6 +98,8 @@ class SideMap extends React.Component {
           zoomOffset={-1}
           url={`https://api.mapbox.com/styles/v1/studentlifenewspaper/${id}/tiles/{z}/{x}/{y}?access_token=${accessToken}`}
         />
+        <Marker position={[38.648435, -90.307769]}/>
+        {markers}
       </Map>
     );
   }

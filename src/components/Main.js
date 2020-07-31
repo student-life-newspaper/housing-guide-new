@@ -24,7 +24,7 @@ class Main extends React.Component {
     this.onLocationSelection = this.onLocationSelection.bind(this);
     this.getData = this.getData.bind(this);
   }
-  
+
   getData(location = this.state.selectedLocation) {
     let filteredData;
     if (location !== 'All') {
@@ -50,10 +50,10 @@ class Main extends React.Component {
             <Row>
               <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection} />
             </Row>
-            <Listings selectedLocation={this.state.selectedLocation} data={this.state.data}/>
+            <Listings selectedLocation={this.state.selectedLocation} data={this.state.data} />
           </Col>
           <Col md="6" className="side-map pl-0">
-            <SideMap selectedLocation={this.state.selectedLocation}/>
+            <SideMap selectedLocation={this.state.selectedLocation} data={this.state.data} />
           </Col>
         </Row>
       </Container>
