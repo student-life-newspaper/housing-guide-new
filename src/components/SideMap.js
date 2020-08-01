@@ -15,6 +15,11 @@ L.Icon.Default.mergeOptions({
     shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
+const mapBounds = [
+  [38.633863, -90.325649],
+  [38.662028, -90.288587]
+];
+
 const locationPositions = {
   'All': {
     'coordinates': [38.648435, -90.307769],
@@ -67,7 +72,11 @@ class SideMap extends React.Component {
             else longArray.push(position[i]);
           }
           for (let i = 0; i < latArray.length; ++i) {
-            markers.push(<Marker position={[latArray[i], longArray[i]]} key={latArray[i]}></Marker>);
+            markers.push(
+              <Marker position={[latArray[i], longArray[i]]} key={latArray[i]}>
+                <Popup><span onClick={this.props.onLocationSelection}>{data[dorm]['name']}</span></Popup>
+              </Marker>
+            );
           }
         } else {
           console.error('Invalid coordinates for current dorm');          
@@ -90,6 +99,7 @@ class SideMap extends React.Component {
         zoom={zoom}
         style={{ width: '100%', height: '100%' }}
         className="mx-3 side-map"
+        maxBounds={mapBounds}
       >
         <TileLayer
           attribution={'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'}
@@ -98,7 +108,6 @@ class SideMap extends React.Component {
           zoomOffset={-1}
           url={`https://api.mapbox.com/styles/v1/studentlifenewspaper/${id}/tiles/{z}/{x}/{y}?access_token=${accessToken}`}
         />
-        <Marker position={[38.648435, -90.307769]}/>
         {markers}
       </Map>
     );
