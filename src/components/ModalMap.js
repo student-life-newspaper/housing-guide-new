@@ -46,7 +46,6 @@ class ModalMap extends React.Component {
   render() {
     const position = this.getPosition(this.props.coordinates);
     const markers = this.getMarkers(this.props.coordinates);
-    console.log(markers)
     const id = 'ck9nkgte3058o1ip80xvsnybg';
     const accessToken = 'pk.eyJ1Ijoic3R1ZGVudGxpZmVuZXdzcGFwZXIiLCJhIjoiY2s5bmhrZTFzMDJjajNmbzd2eHpoc3BraCJ9.mfW3MvzjG6Rvch9CF1q-Sg';
     return (
