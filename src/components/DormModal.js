@@ -73,7 +73,7 @@ export default class DormModal extends React.Component {
         return (
           <Col xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }} className="text-center" key={time}>
             <p className="font-weight-bold mb-1">{walkTimes[time]}</p>
-            <p>
+            <p  className="modal-body-text">
               {dorm[time]}
               {' '}
               minutes
