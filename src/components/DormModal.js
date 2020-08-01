@@ -141,7 +141,7 @@ export default class DormModal extends React.Component {
             </Row>
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={this.closeModal}>Close</Button>
+            <Button color="secondary" onClick={this.props.closeModal}>Close</Button>
           </ModalFooter>
         </Modal>
       </div>
