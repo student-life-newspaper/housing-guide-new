@@ -73,7 +73,7 @@ class SideMap extends React.Component {
           for (let i = 0; i < latArray.length; ++i) {
             markers.push(
               <Marker position={[latArray[i], longArray[i]]} key={latArray[i]}>
-                <Popup><span onClick={this.props.onLocationSelection}>{data[dorm]['name']}</span></Popup>
+                <Popup><span style={{cursor: 'pointer'}} onClick={() => this.props.selectDorm(data[dorm])}>{data[dorm]['name']}</span></Popup>
               </Marker>
             );
           }
