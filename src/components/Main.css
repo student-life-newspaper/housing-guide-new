@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 * {
   font-family: georgia, times, serif;
 }
@@ -72,6 +74,10 @@
 
 .modal-map-container{
   height: 400px;
+}
+
+#housing-header > p, .filter-btn, .card-text, .modal-body-text, .modal-close-btn{
+  font-family: 'Rubik', sans-serif;
 }
 
 @media(max-width: 761px){

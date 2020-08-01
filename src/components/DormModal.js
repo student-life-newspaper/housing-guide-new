@@ -45,7 +45,7 @@ export default class DormModal extends React.Component {
       .map((key) => {
         if (dorm[key].substring(0, 3) === 'Yes') {
           return (
-            <Col xs={{ size: 12, offset: 1 }} md={{ size: 4, offset: 0 }} className="mb-1" key={key}>
+            <Col xs={{ size: 12, offset: 1 }} md={{ size: 4, offset: 0 }} className="mb-1 modal-body-text" key={key}>
               {' '}
               -
               {facilities[key]}
@@ -53,7 +53,7 @@ export default class DormModal extends React.Component {
           );
         } if (dorm[key] === 'No') {
           return (
-            <Col xs={{ size: 12, offset: 1 }} md={{ size: 4, offset: 0 }} className="mb-1 missing-facilitiy" key={key}>
+            <Col xs={{ size: 12, offset: 1 }} md={{ size: 4, offset: 0 }} className="mb-1 missing-facilitiy modal-body-text" key={key}>
               {' '}
               -
 {facilities[key]}
@@ -130,7 +130,7 @@ export default class DormModal extends React.Component {
                 && (
                 <Row>
                   <div className="modal-divider-horizontal mt-4" />
-                  <p className="mx-3">{dorm.longDesc}</p>
+                  <p className="mx-3 modal-body-text">{dorm.longDesc}</p>
                 </Row>
                 )}
             {this.getWalkTimes(dorm)}
@@ -141,7 +141,7 @@ export default class DormModal extends React.Component {
             </Row>
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={this.props.closeModal}>Close</Button>
+            <Button color="secondary" className="modal-close-btn" onClick={this.props.closeModal}>Close</Button>
           </ModalFooter>
         </Modal>
       </div>
