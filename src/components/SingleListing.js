@@ -7,19 +7,14 @@ import {
 export default class SingleListing extends React.Component {
   constructor(props) {
     super(props);
-    this.selectDorm = this.selectDorm.bind(this);
-  }
-
-  selectDorm() {
-    this.props.selectDorm(this.props.dorm);
   }
 
   render() {
     // TODO: onKeyDown={return event.keyCode != 13 || this.selectDorm}
     // add enter key on dorm selection
-    const { dorm } = this.props;
+    const dorm = this.props.dorm;
     return (
-      <Card className="single-listing cursor-pointer w-100 mb-3" tabIndex="0" onClick={this.selectDorm}>
+      <Card className="single-listing cursor-pointer w-100 mb-3" tabIndex="0" onClick={() => this.props.selectDorm(dorm)}>
         <Row noGutters>
           <Col sm="4">
             <div className="dorm-thumbnail-container" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/thumbs/${this.props.dorm.shortName}.png)`}}>

@@ -30,13 +30,8 @@ const walkTimes = {
 export default class DormModal extends React.Component {
   constructor(props) {
     super(props);
-    this.closeModal = this.closeModal.bind(this);
     this.getFacilities = this.getFacilities.bind(this);
     this.getWalkTimes = this.getWalkTimes.bind(this);
-  }
-
-  closeModal() {
-    this.props.closeModal();
   }
 
   getFacilities(dorm) {
@@ -108,7 +103,7 @@ export default class DormModal extends React.Component {
       return <div />;
     }
     const dorm = this.props.selectedDorm;
-    const closeButton = <button className="close" onClick={this.closeModal}>&times;</button>;
+    const closeButton = <button className="close" onClick={this.props.closeModal}>&times;</button>;
     return (
       <div>
         <Modal className="dorm-modal w80 my-0" isOpen={this.props.modalIsOpen} size="lg">

@@ -20,9 +20,13 @@ class Main extends React.Component {
     this.state = {
       selectedLocation: 'All',
       data: dormData,
+      selectedDorm: null,
+      modalIsOpen: false,
     };
     this.onLocationSelection = this.onLocationSelection.bind(this);
     this.getData = this.getData.bind(this);
+    this.selectDorm = this.selectDorm.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   getData(location = this.state.selectedLocation) {
@@ -41,6 +45,19 @@ class Main extends React.Component {
     this.getData(location);
   }
 
+  selectDorm(dorm) {
+    this.setState(
+      {
+        selectedDorm: dorm,
+        modalIsOpen: true,
+      },
+    );
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+
   render() {
     return (
       <Container fluid={true} className="housing-container px-5">
@@ -50,10 +67,10 @@ class Main extends React.Component {
             <Row>
               <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection} />
             </Row>
-            <Listings selectedLocation={this.state.selectedLocation} data={this.state.data} />
+            <Listings selectedLocation={this.state.selectedLocation} data={this.state.data} selectedDorm={this.state.selectedDorm} selectDorm={this.selectDorm} modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal}/>
           </Col>
           <Col md="6" className="side-map pl-0">
-            <SideMap selectedLocation={this.state.selectedLocation} data={this.state.data} />
+            <SideMap selectedLocation={this.state.selectedLocation} data={this.state.data} selectDorm={this.selectDorm}/>
           </Col>
         </Row>
       </Container>

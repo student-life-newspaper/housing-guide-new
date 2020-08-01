@@ -10,34 +10,16 @@ class Listings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentLocation: this.props.selectedLocation,
-      selectedDorm: null,
-      modalIsOpen: false,
     };
-    this.selectDorm = this.selectDorm.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  selectDorm(dorm) {
-    this.setState(
-      {
-        selectedDorm: dorm,
-        modalIsOpen: true,
-      },
-    );
-  }
-
-  closeModal() {
-    this.setState({ modalIsOpen: false });
   }
 
   render() {
     const currentData = this.props.data;
-    const list = currentData.map((dorm) => <SingleListing dorm={dorm} key={dorm.shortName} selectDorm={this.selectDorm} />);
+    const list = currentData.map((dorm) => <SingleListing dorm={dorm} key={dorm.shortName} selectDorm={this.props.selectDorm} />);
     return (
       <Row className="listing-container mt-3">
         {list}
-        <DormModal selectedDorm={this.state.selectedDorm} closeModal={this.closeModal} modalIsOpen={this.state.modalIsOpen} />
+        <DormModal selectedDorm={this.props.selectedDorm} closeModal={this.props.closeModal} modalIsOpen={this.props.modalIsOpen} />
       </Row>
     );
   }

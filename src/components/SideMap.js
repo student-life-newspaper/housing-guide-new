@@ -60,7 +60,6 @@ class SideMap extends React.Component {
   
   getMarkers(data) {
     let markers = [];
-    //let data = this.state.data;
     for (let dorm in data) {
       if(data[dorm].hasOwnProperty('coordinates')){
         const position = data[dorm]['coordinates'].split(', ');
@@ -92,7 +91,6 @@ class SideMap extends React.Component {
     const id = 'ck9nkgte3058o1ip80xvsnybg';
     const accessToken = 'pk.eyJ1Ijoic3R1ZGVudGxpZmVuZXdzcGFwZXIiLCJhIjoiY2s5bmhrZTFzMDJjajNmbzd2eHpoc3BraCJ9.mfW3MvzjG6Rvch9CF1q-Sg';
     const markers = this.state.markers;
-    console.log(markers)
     return (
       <Map
         center={position}
