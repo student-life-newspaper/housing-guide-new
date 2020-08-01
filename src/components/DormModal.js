@@ -45,18 +45,14 @@ export default class DormModal extends React.Component {
       .map((key) => {
         if (dorm[key].substring(0, 3) === 'Yes') {
           return (
-            <Col xs={{ size: 12, offset: 1 }} md={{ size: 4, offset: 0 }} className="mb-1 modal-body-text" key={key}>
-              {' '}
-              -
+            <Col xs={{ size: 12}} md={{ size: 4}} className="mb-1 modal-body-text" key={key}>
               {facilities[key]}
             </Col>
           );
         } if (dorm[key] === 'No') {
           return (
-            <Col xs={{ size: 12, offset: 1 }} md={{ size: 4, offset: 0 }} className="mb-1 missing-facilitiy modal-body-text" key={key}>
-              {' '}
-              -
-{facilities[key]}
+            <Col xs={{ size: 12}} md={{ size: 4}} className="mb-1 missing-facilitiy modal-body-text" key={key}>
+              {facilities[key]}
             </Col>
           );
         }
