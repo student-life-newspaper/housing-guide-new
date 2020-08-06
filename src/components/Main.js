@@ -69,8 +69,8 @@ class Main extends React.Component {
             </Row>
             <Listings selectedLocation={this.state.selectedLocation} data={this.state.data} selectedDorm={this.state.selectedDorm} selectDorm={this.selectDorm} modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal}/>
           </Col>
-          <Col md="6" className="side-map pl-0">
-            <SideMap selectedLocation={this.state.selectedLocation} data={this.state.data} selectDorm={this.selectDorm}/>
+          <Col md="6" className="side-map pl-0" id="side-map-container">
+            <SideMap selectedLocation={this.state.selectedLocation} data={this.state.data} selectDorm={this.selectDorm} id="side-map-container"/>
           </Col>
         </Row>
       </Container>
