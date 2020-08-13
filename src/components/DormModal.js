@@ -99,10 +99,10 @@ export default class DormModal extends React.Component {
       return <div />;
     }
     const dorm = this.props.selectedDorm;
-    const closeButton = <button className="close" onClick={this.props.closeModal}>&times;</button>;
+    const closeButton = <button className="close" onClick={this.props.toggleModal}>&times;</button>;
     return (
       <div>
-        <Modal className="dorm-modal w80 my-0" isOpen={this.props.modalIsOpen} size="lg">
+        <Modal className="dorm-modal w80 my-0" isOpen={this.props.modalIsOpen} toggle={this.props.toggleModal} size="lg">
           <ModalHeader close={closeButton} />
           <ModalCarousel carouselImages={dorm.carouselImages} dormName={dorm.shortName} />
           <ModalBody className="m-4">
@@ -137,7 +137,7 @@ export default class DormModal extends React.Component {
             </Row>
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" className="modal-close-btn" onClick={this.props.closeModal}>Close</Button>
+            <Button color="secondary" className="modal-close-btn" onClick={this.props.toggleModal}>Close</Button>
           </ModalFooter>
         </Modal>
       </div>

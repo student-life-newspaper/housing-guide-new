@@ -19,7 +19,7 @@ class Listings extends React.Component {
     return (
       <Row className="listing-container mt-3">
         {list}
-        <DormModal selectedDorm={this.props.selectedDorm} closeModal={this.props.closeModal} modalIsOpen={this.props.modalIsOpen} />
+        <DormModal selectedDorm={this.props.selectedDorm} toggleModal={this.props.toggleModal} modalIsOpen={this.props.modalIsOpen} />
       </Row>
     );
   }

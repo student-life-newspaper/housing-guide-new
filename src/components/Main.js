@@ -26,7 +26,7 @@ class Main extends React.Component {
     this.onLocationSelection = this.onLocationSelection.bind(this);
     this.getData = this.getData.bind(this);
     this.selectDorm = this.selectDorm.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   getData(location = this.state.selectedLocation) {
@@ -54,8 +54,10 @@ class Main extends React.Component {
     );
   }
 
-  closeModal() {
-    this.setState({ modalIsOpen: false });
+  toggleModal() {
+    this.setState(prevState => ({
+      modalIsOpen: !prevState.modalIsOpen
+    }));
   }
 
   render() {
@@ -67,7 +69,7 @@ class Main extends React.Component {
             <Row>
               <Filters selected={this.state.selectedLocation} options={locationOptions} onChange={this.onLocationSelection} />
             </Row>
-            <Listings selectedLocation={this.state.selectedLocation} data={this.state.data} selectedDorm={this.state.selectedDorm} selectDorm={this.selectDorm} modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal}/>
+            <Listings selectedLocation={this.state.selectedLocation} data={this.state.data} selectedDorm={this.state.selectedDorm} selectDorm={this.selectDorm} modalIsOpen={this.state.modalIsOpen} toggleModal={this.toggleModal}/>
           </Col>
           <Col md="6" className="side-map pl-0" id="side-map-container">
             <SideMap selectedLocation={this.state.selectedLocation} data={this.state.data} selectDorm={this.selectDorm} id="side-map-container"/>
