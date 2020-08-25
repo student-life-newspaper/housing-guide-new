@@ -10,9 +10,9 @@ import L from 'leaflet';
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
-    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-    iconUrl: require('leaflet/dist/images/marker-icon.png'),
-    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
 const mapBounds = [
@@ -21,7 +21,7 @@ const mapBounds = [
 ];
 
 const locationPositions = {
-  'All': {
+  All: {
     'coordinates': [38.648435, -90.307769],
     'zoom': 14.5,
   },
@@ -29,7 +29,7 @@ const locationPositions = {
     'coordinates': [38.644432, -90.313888],
     'zoom': 16.5,
   },
-  'Village': {
+  Village: {
     'coordinates': [38.650777, -90.313331],
     'zoom': 17,
   },

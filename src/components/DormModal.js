@@ -124,10 +124,10 @@ export default class DormModal extends React.Component {
             </Row>
             {dorm.longDesc
                 && (
-                <Row>
-                  <div className="modal-divider-horizontal mt-4" />
-                  <p className="mx-3 modal-body-text">{dorm.longDesc}</p>
-                </Row>
+                  <Row>
+                    <div className="modal-divider-horizontal mt-4" />
+                    <p className="mx-3 modal-body-text">{dorm.longDesc}</p>
+                  </Row>
                 )}
             {this.getWalkTimes(dorm)}
             {this.getFacilities(dorm)}
