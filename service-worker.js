@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/housing-guide-new/precache-manifest.a94da7b125242021a300056d0cdf4a9f.js"
+  "/housing-guide-new/precache-manifest.01723af1003cafeeabeae22b1de85a9a.js"
 );
 
 self.addEventListener('message', (event) => {
