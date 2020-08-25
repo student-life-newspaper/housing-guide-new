@@ -1,8 +1,8 @@
 {
-  "name": "housing-guide-new",
+  "name": "housing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://student-life-newspaper.github.io/housing-guide-new/",
+  "homepage": "https://dev.studlife.com/housing/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "reactstrap": "^8.5.1"
   },
