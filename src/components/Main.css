@@ -8,6 +8,15 @@
   max-width: 1200px;
 }
 
+.banner-container{
+  display: flex;
+  justify-content: center;
+}
+
+.off-campus-banner{
+  max-width: 100%;
+}
+
 .dorm-thumbnail-container{
   background-size: cover;
   background-position: 50% 50%;
