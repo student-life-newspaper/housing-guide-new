@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/housing-guide-new/static/css/main.5e46af44.chunk.css",
-    "main.js": "/housing-guide-new/static/js/main.ab72b5dd.chunk.js",
-    "main.js.map": "/housing-guide-new/static/js/main.ab72b5dd.chunk.js.map",
-    "runtime-main.js": "/housing-guide-new/static/js/runtime-main.849d7cd2.js",
-    "runtime-main.js.map": "/housing-guide-new/static/js/runtime-main.849d7cd2.js.map",
-    "static/css/2.b7cc38ad.chunk.css": "/housing-guide-new/static/css/2.b7cc38ad.chunk.css",
-    "static/js/2.eb838d8c.chunk.js": "/housing-guide-new/static/js/2.eb838d8c.chunk.js",
-    "static/js/2.eb838d8c.chunk.js.map": "/housing-guide-new/static/js/2.eb838d8c.chunk.js.map",
-    "index.html": "/housing-guide-new/index.html",
-    "precache-manifest.2e9d95bd75a6c3cabe1b0cb5aefc537a.js": "/housing-guide-new/precache-manifest.2e9d95bd75a6c3cabe1b0cb5aefc537a.js",
-    "service-worker.js": "/housing-guide-new/service-worker.js",
-    "static/css/2.b7cc38ad.chunk.css.map": "/housing-guide-new/static/css/2.b7cc38ad.chunk.css.map",
-    "static/css/main.5e46af44.chunk.css.map": "/housing-guide-new/static/css/main.5e46af44.chunk.css.map",
-    "static/js/2.eb838d8c.chunk.js.LICENSE.txt": "/housing-guide-new/static/js/2.eb838d8c.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/housing-guide-new/static/media/logo.5d5d9eef.svg"
+    "main.css": "/housing/static/css/main.a6634c58.chunk.css",
+    "main.js": "/housing/static/js/main.835e1bf1.chunk.js",
+    "main.js.map": "/housing/static/js/main.835e1bf1.chunk.js.map",
+    "runtime-main.js": "/housing/static/js/runtime-main.4c4cc480.js",
+    "runtime-main.js.map": "/housing/static/js/runtime-main.4c4cc480.js.map",
+    "static/css/2.7302b888.chunk.css": "/housing/static/css/2.7302b888.chunk.css",
+    "static/js/2.fe5e7b5d.chunk.js": "/housing/static/js/2.fe5e7b5d.chunk.js",
+    "static/js/2.fe5e7b5d.chunk.js.map": "/housing/static/js/2.fe5e7b5d.chunk.js.map",
+    "index.html": "/housing/index.html",
+    "precache-manifest.26d2716c698c5c35a574ccacf64b3e83.js": "/housing/precache-manifest.26d2716c698c5c35a574ccacf64b3e83.js",
+    "service-worker.js": "/housing/service-worker.js",
+    "static/css/2.7302b888.chunk.css.map": "/housing/static/css/2.7302b888.chunk.css.map",
+    "static/css/main.a6634c58.chunk.css.map": "/housing/static/css/main.a6634c58.chunk.css.map",
+    "static/js/2.fe5e7b5d.chunk.js.LICENSE.txt": "/housing/static/js/2.fe5e7b5d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/housing/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.849d7cd2.js",
-    "static/css/2.b7cc38ad.chunk.css",
-    "static/js/2.eb838d8c.chunk.js",
-    "static/css/main.5e46af44.chunk.css",
-    "static/js/main.ab72b5dd.chunk.js"
+    "static/js/runtime-main.4c4cc480.js",
+    "static/css/2.7302b888.chunk.css",
+    "static/js/2.fe5e7b5d.chunk.js",
+    "static/css/main.a6634c58.chunk.css",
+    "static/js/main.835e1bf1.chunk.js"
   ]
 }
