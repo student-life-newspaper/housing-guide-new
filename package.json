@@ -1,8 +1,8 @@
 {
-  "name": "housing",
+  "name": "housing-guide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dev.studlife.com/housing/",
+  "homepage": "https://www.studlife.com/housing-guide/",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -52,6 +52,7 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "reactstrap": "^8.5.1",
     "resolve": "1.15.0",
