@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
+  font-family: georgia, times, serif;
+}
+
+.housing-header h1 {
   font-family: georgia, times, serif;
 }
 
@@ -43,7 +47,7 @@
 
 .btn-primary, .btn-primary:hover{
   color: #b1170f !important;
-  background-color: #fff;
+  background-color: #fff !important;
   border-color: #b1170f !important;
 }
 
@@ -87,6 +91,7 @@
 
 #housing-header > p, .filter-btn, .card-text, .modal-body-text, .modal-close-btn{
   font-family: 'Rubik', sans-serif;
+  font-size: 1.1em;
 }
 
 @media(max-width: 761px){
