@@ -109,16 +109,16 @@ export default class DormModal extends React.Component {
             <h1 className="modal-title text-center">{dorm.name}</h1>
             <Row className="text-center mt-4 font-weight-bold">
               <div className="modal-divider-horizontal mt-1" />
-              <Col className="mb-3" xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }}>
+              <Col className="mb-3 dorm-overview" xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }}>
                 {dorm.style}
                 {' '}
                 housing
               </Col>
-              <Col className="mb-3" xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }}>
+              <Col className="mb-3 dorm-overview" xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }}>
                 {dorm.roomType[0].toUpperCase()}
                 {dorm.roomType.slice(1)}
               </Col>
-              <Col className="mb-3" xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }}>
+              <Col className="mb-3 dorm-overview" xs={{ size: 12, offset: 0 }} md={{ size: 4, offset: 0 }}>
                 {dorm.bathroomType}
               </Col>
             </Row>
